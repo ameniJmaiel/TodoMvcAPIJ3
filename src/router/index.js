@@ -28,6 +28,11 @@ const routes = [
           import(/* webpackChunkName: "user" */ "../views/User.vue")
       }
     ]
+  },
+  {
+    path: "/followers",
+    component: () =>
+      import(/* webpackChunkName: "users" */ "../views/followers.vue")
   }
 ];
 
